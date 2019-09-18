@@ -1,0 +1,27 @@
+ <ion-header>
+  <ion-navbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+ <ion-content padding>
+ <ion-item>
+    <ion-label>Nome:</ion-label>
+    <ion-input placeholder="Digite o nome do produto" [(ngModel)]="nome" name="nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Preço:</ion-label>
+    <ion-input placeholder="Digite preço" [(ngModel)]="preco" name="preco"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Quantidade:</ion-label>
+    <ion-input placeholder="Digite quantidade" [(ngModel)]="qtd" name="qtd"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button (click)="adicionar()">Adiconar</button>
+  </ion-item>
+
+ </ion-content>
